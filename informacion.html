@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/ejemplo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='http://g3k.co/font/rawen.css' rel='stylesheet' type='text/css'>
+    <link href='http://g3k.co/font/mix-rawen-g3k/g3k.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-nav">
+            <a class="navbar-brand" id="highlight" href="#">Electrodomésticos S.A.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="producto.html">Productos<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacion.html">Más Información</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+        <div class="containerI">
+            <p>Comunicate con Nosotros</p>
+        </div>
+        <div class="containerC">
+            <div class="containerC" id="div1">
+                <a class="social-icon social-icon--twitter">
+                    <i class="fa fa-twitter"></i>
+                    <div class="tooltip">Twitter</div>
+                </a>
+            </div><br>
+            <div class="containerC" id="div2">
+                <a class="social-icon social-icon--instagram">
+                    <i class="fa fa-instagram"></i>
+                    <div class="tooltip">Instagram</div>
+                </a>
+            </div><br>
+            <div class="containerC" id="div3">
+                <a class="social-icon social-icon--linkedin">
+                    <i class="fa fa-linkedin"></i>
+                    <div class="tooltip">LinkedIn</div>
+                </a>
+            </div><br>
+            <div class="containerC" id="div4">
+                <a class="social-icon social-icon--facebook">
+                    <i class="fa fa-facebook"></i>
+                    <div class="tooltip">Facebook</div>
+                </a>
+            </div><br>
+        </div>
+    </div>
+    <style>
+        .containerC {
+            width: 100px;
+            height: 100px;
+            background: rgb(233, 198, 2);
+            transition: width 2s;
+        }
+
+        #div1 {
+            transition-timing-function: linear;
+        }
+
+        #div2 {
+            transition-timing-function: ease;
+        }
+
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+
+        .containerC:hover {
+            width: 300px;
+        }
+
+        .social-icon:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translate(-50%, -150%);
+            transform: translate(-50%, -150%);
+        }
+
+        .social-icon:active {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+        }
+
+        .social-icons {
+            display: -webkit-box;
+            display: flex;
+        }
+
+        .social-icon {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 0.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 2.5rem;
+            text-decoration: none;
+            -webkit-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+        }
+
+        .social-icon:hover {
+            color: #fff;
+        }
+
+        .social-icon:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translate(-50%, -150%);
+            transform: translate(-50%, -150%);
+        }
+
+        .social-icon:active {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+        }
+
+        .social-icon--linkedin {
+            background: #006599;
+            color: #fff;
+        }
+
+        .social-icon--linkedin .tooltip {
+            background: #006599;
+            color: currentColor;
+        }
+
+        .social-icon--linkedin .tooltip:after {
+            border-top-color: #006599;
+        }
+
+        .social-icon--twitter {
+            background: #2b97f1;
+            color: #fff;
+        }
+
+        .social-icon--twitter .tooltip {
+            background: #2b97f1;
+            color: currentColor;
+        }
+
+        .social-icon--twitter .tooltip:after {
+            border-top-color: #2b97f1;
+        }
+
+        .social-icon--facebook {
+            background: #3b5a9b;
+            color: #fff;
+        }
+
+        .social-icon--facebook .tooltip {
+            background: #3b5a9b;
+            color: currentColor;
+        }
+
+        .social-icon--facebook .tooltip:after {
+            border-top-color: #3b5a9b;
+        }
+
+        .social-icon--instagram {
+            background: #527fa6;
+            color: #fff;
+        }
+
+        .social-icon--instagram .tooltip {
+            background: #527fa6;
+            color: currentColor;
+        }
+
+        .social-icon--instagram .tooltip:after {
+            border-top-color: #527fa6;
+        }
+
+        .social-icon i {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
